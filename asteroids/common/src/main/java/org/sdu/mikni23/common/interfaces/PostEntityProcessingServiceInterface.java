@@ -1,7 +1,7 @@
-package org.sdu.mikni23.interfaces;
+package org.sdu.mikni23.common.interfaces;
 
-import org.sdu.mikni23.objects.GameDataObject;
-import org.sdu.mikni23.objects.GameWorldObject;
+import org.sdu.mikni23.common.objects.GameDataObject;
+import org.sdu.mikni23.common.objects.GameWorldObject;
 
 /*
  * Interface for post processing

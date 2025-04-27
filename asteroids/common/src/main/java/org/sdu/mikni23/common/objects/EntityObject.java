@@ -1,4 +1,4 @@
-package org.sdu.mikni23.objects;
+package org.sdu.mikni23.common.objects;
 
 import java.io.Serializable;
 import java.util.Arrays;

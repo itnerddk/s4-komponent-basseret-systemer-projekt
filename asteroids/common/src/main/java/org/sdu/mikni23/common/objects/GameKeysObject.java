@@ -1,4 +1,4 @@
-package org.sdu.mikni23.objects;
+package org.sdu.mikni23.common.objects;
 
 /*
  * Key state object

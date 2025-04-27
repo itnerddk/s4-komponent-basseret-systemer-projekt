@@ -1,8 +1,8 @@
-org\sdu\mikni23\interfaces\EntityProcessingServiceInterface.class
-org\sdu\mikni23\objects\GameDataObject.class
+org\sdu\mikni23\common\interfaces\EntityProcessingServiceInterface.class
+org\sdu\mikni23\common\objects\GameWorldObject.class
 module-info.class
-org\sdu\mikni23\interfaces\PostEntityProcessingServiceInterface.class
-org\sdu\mikni23\objects\EntityObject.class
-org\sdu\mikni23\objects\GameWorldObject.class
-org\sdu\mikni23\interfaces\GamePluginServiceInterface.class
-org\sdu\mikni23\objects\GameKeysObject.class
+org\sdu\mikni23\common\objects\EntityObject.class
+org\sdu\mikni23\common\interfaces\GamePluginServiceInterface.class
+org\sdu\mikni23\common\interfaces\PostEntityProcessingServiceInterface.class
+org\sdu\mikni23\common\objects\GameDataObject.class
+org\sdu\mikni23\common\objects\GameKeysObject.class
