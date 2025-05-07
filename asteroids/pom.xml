@@ -11,6 +11,9 @@
   <modules>
     <module>Core</module>
     <module>common</module>
+    <module>commonbullet</module>
+    <module>bullet</module>
+    <module>player</module>
   </modules>
 
 
