@@ -111,18 +111,18 @@ public class Main extends Application {
                 polygons.remove(polygonEntity);
                 gameWindow.getChildren().remove(removedPolygon);
             }
+        }
 
-            for (EntityObject entity : world.getEntities()) {
-                Polygon polygon = polygons.get(entity);
-                if (polygon == null) {
-                    polygon = new Polygon(entity.getPolygonCoordinates());
-                    polygons.put(entity, polygon);
-                    gameWindow.getChildren().add(polygon);
-                }
-                polygon.setTranslateX(entity.getX());
-                polygon.setTranslateY(entity.getY());
-                polygon.setTranslateZ(entity.getR());
+        for (EntityObject entity : world.getEntities()) {
+            Polygon polygon = polygons.get(entity);
+            if (polygon == null) {
+                polygon = new Polygon(entity.getPolygonCoordinates());
+                polygons.put(entity, polygon);
+                gameWindow.getChildren().add(polygon);
             }
+            polygon.setTranslateX(entity.getX());
+            polygon.setTranslateY(entity.getY());
+            polygon.setRotate(entity.getR());
         }
     }
 

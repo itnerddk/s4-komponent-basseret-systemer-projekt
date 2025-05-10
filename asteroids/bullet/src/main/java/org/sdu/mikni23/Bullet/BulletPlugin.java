@@ -1,6 +1,6 @@
 package org.sdu.mikni23.Bullet;
 
-import org.sdu.mikni23.CommonBullet.Bullet;
+import org.sdu.mikni23.CommonBullet.BulletObject;
 import org.sdu.mikni23.common.interfaces.GamePluginServiceInterface;
 import org.sdu.mikni23.common.objects.EntityObject;
 import org.sdu.mikni23.common.objects.GameDataObject;
@@ -15,7 +15,7 @@ public class BulletPlugin implements GamePluginServiceInterface {
     @Override
     public void stop(GameDataObject gameData, GameWorldObject world) {
         // Remove bullets
-        for (EntityObject e : world.getEntities(Bullet.class)) {
+        for (EntityObject e : world.getEntities(BulletObject.class)) {
             world.removeEntity(e);
         }
     }

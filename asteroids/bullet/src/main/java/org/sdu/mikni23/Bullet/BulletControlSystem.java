@@ -28,8 +28,10 @@ public class BulletControlSystem implements EntityProcessingServiceInterface, Bu
 
     @Override
     public void process(GameDataObject gameData, GameWorldObject world) {
+        
         // process each bullet
         for (EntityObject e : world.getEntities(BulletObject.class)) {
+            System.out.println(e);
             double cX = Math.cos(Math.toRadians(e.getR()));
             double cY = Math.sin(Math.toRadians(e.getR()));
             e.setX(e.getX() + cX * bulletChangeMultiplier);
