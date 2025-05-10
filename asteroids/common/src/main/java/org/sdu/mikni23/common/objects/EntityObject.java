@@ -55,7 +55,7 @@ public class EntityObject implements Serializable {
     }
 
 
-    public void setPolygonCoordinates(double[] polygonCoordinates) {
+    public void setPolygonCoordinates(double... polygonCoordinates) {
         this.polygonCoordinates = polygonCoordinates;
     }
 

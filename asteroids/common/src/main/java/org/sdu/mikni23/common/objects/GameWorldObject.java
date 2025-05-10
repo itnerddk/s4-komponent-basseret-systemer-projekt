@@ -1,6 +1,8 @@
 package org.sdu.mikni23.common.objects;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
@@ -61,6 +63,23 @@ public class GameWorldObject {
      */
     public Collection<EntityObject> getEntities() {
         return entityMap.values();
+    }
+
+    /**
+     * 
+     * Get all entities of an specific type
+     * 
+     * @param entityClass
+     * @return
+     */
+    public List<EntityObject> getEntities(Class entityClass) {
+        List<EntityObject> r = new ArrayList<>();
+        for (EntityObject e : getEntities()) {
+            if (e.getClass().equals(entityClass)) {
+                r.add(e);
+            }
+        }
+        return r;
     }
 
 }
