@@ -1,6 +1,6 @@
 module Core {
-    requires common;
-    requires javafx.graphics;
+    requires transitive common;
+    requires transitive javafx.graphics;
     exports org.sdu.mikni23.main;
     opens org.sdu.mikni23.main to javafx.graphics;
 

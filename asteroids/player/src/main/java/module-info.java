@@ -5,7 +5,7 @@ import org.sdu.mikni23.common.interfaces.EntityProcessingServiceInterface;
 import org.sdu.mikni23.common.interfaces.GamePluginServiceInterface;
 
 module player {
-    requires common;
+    requires transitive common;
     requires commonbullet;
 
     provides GamePluginServiceInterface with PlayerPlugin;

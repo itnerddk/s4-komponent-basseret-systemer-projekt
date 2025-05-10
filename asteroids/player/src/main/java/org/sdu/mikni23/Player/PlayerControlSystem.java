@@ -49,6 +49,23 @@ public class PlayerControlSystem implements EntityProcessingServiceInterface {
                     }
                 );
             }
+
+            // limit the player movement to inside the visible playing field
+            if (p.getX() < 0) {
+                p.setX(1);
+            }
+
+            if (p.getX() > gameData.getDisplayWidth()) {
+                p.setX(gameData.getDisplayWidth() - 1);
+            }
+
+            if (p.getY() < 0) {
+                p.setY(1);
+            }
+
+            if (p.getY() > gameData.getDisplayHeight()) {
+                p.setY(gameData.getDisplayHeight() - 1);
+            }
         }
     }
 
