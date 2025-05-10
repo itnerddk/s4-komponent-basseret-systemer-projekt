@@ -14,6 +14,7 @@
     <module>commonbullet</module>
     <module>bullet</module>
     <module>player</module>
+    <module>enemy</module>
   </modules>
 
 
