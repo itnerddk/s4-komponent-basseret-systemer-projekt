@@ -14,8 +14,6 @@ import org.sdu.mikni23.enemy.objects.EnemyObject;
 import static java.util.stream.Collectors.toList;
 
 public class EnemyControlSystem implements EntityProcessingServiceInterface {
-    
-    private final static int enemyRotationSpeed = 3;
 
     @Override
     public void process(GameDataObject gameData, GameWorldObject world) {
