@@ -16,6 +16,7 @@
     <module>player</module>
     <module>enemy</module>
     <module>meteor</module>
+    <module>collision</module>
   </modules>
 
 
