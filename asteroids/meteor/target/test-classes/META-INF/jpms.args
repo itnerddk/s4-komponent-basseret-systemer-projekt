@@ -1,4 +1,0 @@
---patch-module
-meteor=_
---add-reads
-meteor=ALL-UNNAMED

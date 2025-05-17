@@ -4,23 +4,23 @@ import java.io.Serializable;
 import java.util.Arrays;
 import java.util.UUID;
 
-/*
+/**
  * Base entity
  */
-public class EntityObject implements Serializable {
+public abstract class EntityObject implements Serializable {
     
-    /*
+    /**
      * Entity unique id
      */
     private final UUID id = UUID.randomUUID();
 
-    /*
+    /**
      * Polygon to draw
      */
     private double[] polygonCoordinates;
 
 
-    /*
+    /**
      * Position and rotation
      */
     private double x;
@@ -28,12 +28,15 @@ public class EntityObject implements Serializable {
     private double r;
 
 
-    /*
+    /**
      * hitbox radius
      */
     private float radius;
 
 
+    /*
+     * Constructors
+     */
     public EntityObject() {}
 
     public EntityObject(double[] polygonCoordinates, double x, double y, double r, float radius) {
@@ -43,6 +46,16 @@ public class EntityObject implements Serializable {
         this.r = r;
         this.radius = radius;
     }
+
+
+    /**
+     * Called when it collides with another object
+     * 
+     * @param gamedata
+     * @param world
+     * @param entity2 object this object collided with
+     */
+    public abstract void handleCollide(GameDataObject gamedata, GameWorldObject world, EntityObject entity2);
 
 
     public UUID getId() {

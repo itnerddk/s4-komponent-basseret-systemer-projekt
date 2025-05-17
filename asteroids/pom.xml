@@ -15,7 +15,7 @@
     <module>bullet</module>
     <module>player</module>
     <module>enemy</module>
-    <module>meteor</module>
+    <module>asteroid</module>
     <module>collision</module>
   </modules>
 
