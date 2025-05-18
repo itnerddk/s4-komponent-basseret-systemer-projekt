@@ -9,7 +9,7 @@ import org.sdu.mikni23.common.objects.GameWorldObject;
 public interface EntityProcessingServiceInterface {
     
     /**
-     * Process a frame
+     * Process a physics frame
      * 
      * @param gameData for the game
      * @param world for the world

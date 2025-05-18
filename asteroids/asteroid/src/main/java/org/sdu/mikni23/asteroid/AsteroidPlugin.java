@@ -14,7 +14,7 @@ public class AsteroidPlugin implements GamePluginServiceInterface {
     public void start(GameDataObject gameData, GameWorldObject world) {
         
         // create meteors
-        for (int i = 0; i < ThreadLocalRandom.current().nextInt(10, 50); i++) {
+        for (int i = 0; i < ThreadLocalRandom.current().nextInt(5, 15); i++) {
             createAsteroid(world, ThreadLocalRandom.current().nextInt(5, 15), ThreadLocalRandom.current().nextInt(0, gameData.getDisplayWidth()), ThreadLocalRandom.current().nextInt(0, gameData.getDisplayHeight()), ThreadLocalRandom.current().nextInt(0, 359));
         }
     }
