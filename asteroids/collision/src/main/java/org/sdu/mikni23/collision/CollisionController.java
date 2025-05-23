@@ -21,7 +21,7 @@ public class CollisionController implements EntityProcessingServiceInterface {
      * @param e2
      * @return true if collided, otherwise false
      */
-    private boolean collides(EntityObject e1, EntityObject e2) {
+    public boolean collides(EntityObject e1, EntityObject e2) {
         double dx = e1.getX() - e2.getX();
         double dy = e1.getY() - e2.getY();
 
