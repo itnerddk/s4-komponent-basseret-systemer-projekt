@@ -1,4 +1,0 @@
---patch-module
-commonbullet=_
---add-reads
-commonbullet=ALL-UNNAMED

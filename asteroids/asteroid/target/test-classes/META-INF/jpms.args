@@ -1,4 +1,0 @@
---patch-module
-asteroid=_
---add-reads
-asteroid=ALL-UNNAMED
