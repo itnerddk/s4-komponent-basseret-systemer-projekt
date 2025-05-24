@@ -1,0 +1,4 @@
+org\sdu\mikni23\Bullet\BulletControlSystem.class
+org\sdu\mikni23\Bullet\BulletPlugin.class
+org\sdu\mikni23\Bullet\BulletSPIService.class
+module-info.class

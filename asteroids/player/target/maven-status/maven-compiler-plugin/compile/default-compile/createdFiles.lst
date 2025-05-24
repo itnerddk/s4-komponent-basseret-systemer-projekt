@@ -1,0 +1,4 @@
+org\sdu\mikni23\Player\objects\PlayerObject.class
+module-info.class
+org\sdu\mikni23\Player\PlayerPlugin.class
+org\sdu\mikni23\Player\PlayerControlSystem.class

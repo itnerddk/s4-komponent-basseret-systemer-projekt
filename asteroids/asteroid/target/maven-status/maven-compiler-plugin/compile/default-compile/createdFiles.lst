@@ -1,0 +1,4 @@
+org\sdu\mikni23\asteroid\AsteroidControlSystem.class
+org\sdu\mikni23\asteroid\AsteroidPlugin.class
+module-info.class
+org\sdu\mikni23\asteroid\objects\AsteroidObject.class

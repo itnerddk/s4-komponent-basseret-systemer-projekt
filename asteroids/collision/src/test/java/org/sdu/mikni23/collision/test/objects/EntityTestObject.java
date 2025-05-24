@@ -1,4 +1,4 @@
-package org.sdu.mikni23.collision.objects;
+package org.sdu.mikni23.collision.test.objects;
 
 import org.sdu.mikni23.common.objects.EntityObject;
 import org.sdu.mikni23.common.objects.GameDataObject;
