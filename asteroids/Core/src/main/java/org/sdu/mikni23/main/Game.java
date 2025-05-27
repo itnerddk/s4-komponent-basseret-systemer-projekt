@@ -12,7 +12,6 @@ import org.sdu.mikni23.common.objects.GameDataObject;
 import org.sdu.mikni23.common.objects.GameWorldObject;
 
 import javafx.animation.AnimationTimer;
-import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Pane;

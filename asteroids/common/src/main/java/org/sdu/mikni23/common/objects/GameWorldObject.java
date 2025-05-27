@@ -18,6 +18,16 @@ public class GameWorldObject {
     private final Map<UUID, EntityObject> entityMap = new ConcurrentHashMap<>();
 
     /**
+     * Score
+     */
+    private int score = 0;
+
+    /**
+     * Game ended
+     */
+    private boolean gameover = false;
+
+    /**
      * Add entity to the world
      * 
      * @param entity The entity to add
@@ -80,6 +90,28 @@ public class GameWorldObject {
             }
         }
         return r;
+    }
+
+    public boolean isGameover() {
+        return gameover;
+    }
+
+    public void setGameover(boolean gameover) {
+        this.gameover = gameover;
+    }
+
+    public void addScore(int score) {
+        this.score += score;
+
+        System.out.println("Score: " + this.score);
+    }
+
+    public void clearScore() {
+        this.score = 0;
+    }
+
+    public int getScore() {
+        return score;
     }
 
 }

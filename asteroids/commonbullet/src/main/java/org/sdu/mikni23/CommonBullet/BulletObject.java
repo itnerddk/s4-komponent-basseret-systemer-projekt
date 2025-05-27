@@ -14,6 +14,9 @@ public class BulletObject extends EntityObject {
             return;
         }
 
+        // add score
+        world.addScore(1);
+
         world.removeEntity(this); // remove the bullet when it hits something
     }
     
