@@ -17,6 +17,9 @@ public class EnemyObject extends EntityObject {
         // take damage
         health -= 1;
 
+        // add score
+        world.addScore(1);
+
         System.out.println("Enemy hit, current health: " + health);
 
         // remove enemy once it runs out of life

@@ -17,6 +17,7 @@
     <module>enemy</module>
     <module>asteroid</module>
     <module>collision</module>
+    <module>score</module>
   </modules>
 
 
